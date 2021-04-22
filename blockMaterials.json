@@ -1,0 +1,51 @@
+{
+    "spawner" : {
+        "isBlock" : false,
+        "color" : "white",
+        "hasMoved" : false,
+        "hasGravity" : false,
+        "blockType" : "spawner"
+    },
+    "air" : {
+        "isBlock" : false,
+        "color" : "red",
+        "hasMoved" : false,
+        "hasGravity" : true,
+        "blockType" : "air"
+    },
+    "sand" : {
+        "isBlock" : true,
+        "color" : "yellow",
+        "hasMoved" : true,
+        "hasGravity" : true,
+        "blockType" : "sand"
+    },
+    "brick" : {
+        "isBlock" : true,
+        "color" : "brown",
+        "hasMoved" : true,
+        "hasGravity" : true,
+        "blockType" : "brick"
+    },
+    "water" : {
+        "isBlock" : true,
+        "color" : "cyan",
+        "hasMoved" : true,
+        "hasGravity" : true,
+        "blockType" : "water"
+    },
+    "acid" : {
+        "isBlock" : true,
+        "color" : "green",
+        "hasMoved" : true,
+        "hasGravity" : true,
+        "blockType" : "acid"
+    },
+    "boarder" : {
+        "isBlock" : true,
+        "color" : "grey",
+        "hasMoved" : true,
+        "hasGravity" : false,
+        "blockType" : "boarder"
+    }
+}
