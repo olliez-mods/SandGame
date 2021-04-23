@@ -22,33 +22,33 @@ function getUpdatedBlockPosition(board, block, x, y, boarder) {
 
     if(board[y + 1][x].blockType == "water"){
         board[y + 1][x] = acidBlock;
-    }else if(board[y + 1][x].isBlock && board[y + 1][x].blockType != "boarder"){
+    }else if(board[y + 1][x].isBlock && board[y + 1][x].blockType != "boarder" && board[y + 1][x].blockType != "acid"){
         if(Math.floor(Math.random() * 10) < config.acidSpread){
-            board[y + 1][x] = acidBlock;
+            board[y + 1][x] = airBlock;
         }
     }
 
     if(board[y - 1][x].blockType == "water"){
         board[y - 1][x] = acidBlock;
-    }else if(board[y - 1][x].isBlock && board[y - 1][x].blockType != "boarder"){
+    }else if(board[y - 1][x].isBlock && board[y - 1][x].blockType != "boarder" && board[y + 1][x].blockType != "acid"){
         if(Math.floor(Math.random() * 10) < config.acidSpread){
-            board[y - 1][x] = acidBlock;
+            board[y - 1][x] = airBlock;
         }
     }
 
     if(board[y][x - 1].blockType == "water"){
         board[y][x - 1] = acidBlock;
-    }else if(board[y][x - 1].isBlock && board[y][x - 1].blockType != "boarder"){
+    }else if(board[y][x - 1].isBlock && board[y][x - 1].blockType != "boarder" && board[y + 1][x].blockType != "acid"){
         if(Math.floor(Math.random() * 10) < config.acidSpread){
-            board[y][x - 1] = acidBlock;
+            board[y][x - 1] = airBlock;
         }
     }
 
     if(board[y][x + 1].blockType == "water"){
         board[y][x + 1] = acidBlock;
-    }else if(board[y][x + 1].isBlock && board[y][x + 1].blockType != "boarder"){
+    }else if(board[y][x + 1].isBlock && board[y][x + 1].blockType != "boarder" && board[y + 1][x].blockType != "acid"){
         if(Math.floor(Math.random() * 10) < config.acidSpread){
-            board[y][x + 1] = acidBlock;
+            board[y][x + 1] = airBlock;
         }
     }
 
