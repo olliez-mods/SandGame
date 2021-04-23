@@ -13,7 +13,8 @@ let matChooserArr = [
     "water",
     "acid",
     "boarder",
-    "dirt"
+    "dirt",
+    "wood"
 ];
 
 

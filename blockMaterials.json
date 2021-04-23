@@ -54,5 +54,12 @@
         "hasMoved" : true,
         "hasGravity" : true,
         "blockType" : "dirt"
+    },
+    "wood" : {
+        "isBlock" : true,
+        "color" : "brown",
+        "hasMoved" : true,
+        "hasGravity" : true,
+        "blockType" : "wood"
     }
 }
