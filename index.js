@@ -12,7 +12,8 @@ let matChooserArr = [
     "brick",
     "water",
     "acid",
-    "boarder"
+    "boarder",
+    "dirt"
 ];
 
 
@@ -21,7 +22,8 @@ dis.run();
 let boardHeight = config.height;
 let boardWidth = config.width;
 
-let board = [];
+function resetBoard(){
+board = [];
 for (let i = 0; i < boardHeight; i++) {
     board.push([]);
     for (let a = 0; a < boardWidth; a++) {
@@ -35,6 +37,7 @@ for (let i = 0; i < boardHeight; i++) {
     }
 }
 
+
 for(let i = 0; i < boardHeight; i++){
     board[i][0].isBlock = true;
     board[i][0].hasGravity = false;
@@ -44,6 +47,8 @@ for(let i = 0; i < boardHeight; i++){
     board[i][boardWidth-1].hasGravity = false;
     board[i][boardWidth-1].blockType = "boarder"
 }
+}
+resetBoard();
 
 board[0][Math.floor(boardWidth / 2)].blockType = "spawner";
 let spawner = {
@@ -126,6 +131,10 @@ process.stdin.on('keypress', function (ch, key) {
         board[spawner.y+1][spawner.x + 1] = materials[currentMaterial];
     }
     }catch(er){
+        if(ch == 0){
+            resetBoard();
+            return;
+        }
         if(ch-1 < matChooserArr.length){
             currentMaterial = matChooserArr[ch-1];
         }

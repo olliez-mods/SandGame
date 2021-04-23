@@ -47,5 +47,12 @@
         "hasMoved" : true,
         "hasGravity" : false,
         "blockType" : "boarder"
+    },
+    "dirt" : {
+        "isBlock" : true,
+        "color" : "brown",
+        "hasMoved" : true,
+        "hasGravity" : true,
+        "blockType" : "dirt"
     }
 }

@@ -10,7 +10,8 @@ const textures = {
     "brick": "##",
     "water" : "@@",
     "acid" : "HH",
-    "boarder" : "[]"
+    "boarder" : "[]",
+    "dirt" : "{}"
 };
 
 let selectedMaterial = textures.sand;
@@ -31,7 +32,8 @@ function update() {
         });
         boardString += "\n";
     });
-    boardString += `1. Sand, 2. Brick, 3. Water, 4. Acid, 5. Boarder`;
+    boardString += `1. Sand, 2. Brick, 3. Water, 4. Acid, 5. Boarder, 6. dirt`;
+    boardString += '\n to clear hit, "0"';
     console.clear();
     console.log(boardString);
 }
