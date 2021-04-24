@@ -46,7 +46,7 @@ function getUpdatedBlockPosition(board, block, x, y, boarder) {
 
     if(board[y][x + 1].blockType == "water"){
         board[y][x + 1] = acidBlock;
-    }else if(board[y][x + 1].isBlock && board[y][x + 1].blockType != "boarder" && board[y][x - 1].blockType != "acid"){
+    }else if(board[y][x + 1].isBlock && board[y][x + 1].blockType != "boarder" && board[y][x + 1].blockType != "acid"){
         if(Math.floor(Math.random() * 10) < config.acidSpread){
             board[y][x + 1] = airBlock;
         }

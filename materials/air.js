@@ -1,4 +1,4 @@
-function getUpdatedBlockPosition(board, block, x, y){
+function getUpdatedBlockPosition(board){
     return board;
 }
 
