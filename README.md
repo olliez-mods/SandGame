@@ -1,5 +1,5 @@
 # SandGame
-A simple sandbox game for you console
+A simple sandbox game for you console, made with nodeJS
 
 Instructions.
 
