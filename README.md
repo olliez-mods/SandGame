@@ -1,6 +1,8 @@
 # SandGame
 A simple sandbox game for you console, made with nodeJS
 
+[Video Demo](https://youtu.be/Gyp0fMwKs2E)
+
 Instructions.
 
 use the numbers on the top to pick ur material.
